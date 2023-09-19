@@ -1,0 +1,21 @@
+.container-card {
+    display: flex;
+    background: #3c3e44;
+    color: white;
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+.info {
+    padding: 20px;
+}
+
+body {
+    background: #272b33;
+    height: 100vh;
+}
+
+#list-person {
+    display: grid;
+}
