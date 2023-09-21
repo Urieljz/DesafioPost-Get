@@ -30,6 +30,13 @@ const renderPersona = (infoPersona, index) => {
         deletePersona(elementToRemove)
     });
 
+    buttonEdit.addEventListener('click', (event) => {
+        console.log(window)
+        const elementToEdit = event.target.dataset.persona;
+        window.location.href = 'http://localhost:5500/Desafio.Post-Get/update/?id=' + elementToEdit
+        //window.location.pathname = '/Desafio.Post-Get/update/'
+    })
+
     li.appendChild(span);
     li.appendChild(buttonDelete);
     li.appendChild(buttonEdit);
